@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'AtkinsonHyperlegible';
+    src: url('./AtkinsonHyperlegible-Regular.ttf') format('woff2'),
+        url('./AtkinsonHyperlegible-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /*Light Mode*/
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #000000;
+    --button-background: #e0e0e0;
+    --button-text: #000000;
+    --macchiato-text: #24273a;
+    --macchiato-link: #8aadf4;
+    --macchiato-link-hover: #b7bdf8;
+    --card-background: #e0e0e0;
+    --card-text: #000000;
+}
+
+body.dark-mode {
+    --background-color: #24273a;
+    --text-color: #cad3f5;
+    --border-color: #cad3f5;
+    --button-background: #494d64;
+    --button-text: #cad3f5;
+    --macchiato-text: #cad3f5;
+    --macchiato-link: #8aadf4;
+    --macchiato-link-hover: #b7bdf8;
+    --card-background: #494d64;
+    --card-text: #cad3f5;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'AtkinsonHyperlegible', fallback, sans-serif;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    background: var(--button-background);
+    color: var(--button-text);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+}
+
+.button:hover {
+    background: var(--button-text);
+    color: var(--button-background);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.card {
+    background: var(--card-background);
+    color: var(--card-text);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card a {
+    color: var(--card-text);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

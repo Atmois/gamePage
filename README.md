@@ -1,6 +1,6 @@
-# Bloc Breaker
+# Game Page
 
-Basic bloc breaker game based on Atari Breakout.
+Basic website to show off my games.
 
-Demo: https://blocbreaker.atmois.com
-Source: https://git.gay/atmois/blocbreaker
+Demo: https://games.atmois.com
+Source: https://git.gay/atmois/gamePage
